@@ -92,10 +92,46 @@
 
 <footer>
 
-© 2026 My Portfolio
+<p>© 2026 My Portfolio</p>
 
 </footer>
 
-</body>
-</html>
+<!-- กล่องแสดงรูป -->
 
+<div id="popup" class="popup" onclick="closePopup()">
+
+    <img id="popup-img">
+
+</div>
+
+<script>
+
+const images=document.querySelectorAll(".card img");
+
+const popup=document.getElementById("popup");
+
+const popupImg=document.getElementById("popup-img");
+
+images.forEach(img=>{
+
+img.onclick=function(){
+
+popup.style.display="flex";
+
+popupImg.src=this.src;
+
+}
+
+});
+
+function closePopup(){
+
+popup.style.display="none";
+
+}
+
+</script>
+
+</body>
+
+</html>
