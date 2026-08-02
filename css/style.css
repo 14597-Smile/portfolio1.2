@@ -1146,3 +1146,82 @@ footer{
     background:#66bb6a;
     color:white;
 }
+/* ===== GREEN THEME ===== */
+
+::-webkit-scrollbar-track{
+    background:#e8f5e9;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#81c784;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#43a047;
+}
+
+header{
+    background:rgba(76,175,80,.90);
+}
+
+.hero h1,
+.section-title,
+.card h3,
+.profile-text h2,
+.timeline-item h3,
+.contact h2{
+    color:#2e7d32;
+}
+
+.hero h2{
+    color:#43a047;
+}
+
+.hero img{
+    border:8px solid #c8e6c9;
+    box-shadow:0 20px 40px rgba(76,175,80,.25);
+}
+
+.btn{
+    background:#66bb6a;
+    box-shadow:0 12px 30px rgba(76,175,80,.35);
+}
+
+.btn:hover{
+    background:#2e7d32;
+}
+
+.section-title::after{
+    background:#81c784;
+}
+
+.skill:hover{
+    background:#f1f8e9;
+}
+
+.timeline::before{
+    background:#a5d6a7;
+}
+
+.timeline-item::before{
+    background:#66bb6a;
+    box-shadow:0 0 10px rgba(76,175,80,.4);
+}
+
+footer{
+    background:#81c784;
+}
+
+#topBtn{
+    background:#66bb6a;
+    box-shadow:0 10px 20px rgba(76,175,80,.35);
+}
+
+#topBtn:hover{
+    background:#2e7d32;
+}
+
+::selection{
+    background:#66bb6a;
+    color:#fff;
+}
