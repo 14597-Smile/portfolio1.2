@@ -26,11 +26,9 @@
 
 body{
     background:linear-gradient(180deg,#f1f8e9,#e8f5e9,#ffffff);
-}
+    color:#444;
     overflow-x:hidden;
-
 }
-
 /* Scrollbar */
 
 ::-webkit-scrollbar{
