@@ -2,7 +2,7 @@
 
    Portfolio Website
 
-   Theme : Pastel Pink
+   Theme : Pastel green
 
    Author : Benyapron
 
@@ -25,11 +25,8 @@
 }
 
 body{
-
-    background:linear-gradient(180deg,#fff8fb,#ffeef5,#ffffff);
-
-    color:#444;
-
+    background:linear-gradient(180deg,#f1f8e9,#e8f5e9,#ffffff);
+}
     overflow-x:hidden;
 
 }
