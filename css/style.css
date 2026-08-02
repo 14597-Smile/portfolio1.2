@@ -1,176 +1,405 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
+/* ===== Google Font ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
 
 *{
+
     margin:0;
+
     padding:0;
+
     box-sizing:border-box;
+
     font-family:'Kanit',sans-serif;
+
+    scroll-behavior:smooth;
+
 }
 
 body{
-    background:#fff5f8;
-    color:#444;
+
+    background:#fffafc;
+
+    color:#333;
+
 }
 
-/* เมนู */
+/* ===== Navbar ===== */
 
 header{
-    background:#ffb6c1;
-    padding:15px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    position:sticky;
-    top:0;
-    z-index:100;
-}
 
-.logo{
-    color:white;
-    font-size:28px;
-    font-weight:bold;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-    font-size:18px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#ff69b4;
-}
-
-/* Hero */
-
-.hero{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:70px 8%;
-}
-
-.hero-text{
-    width:50%;
-}
-
-.hero-text h1{
-    font-size:55px;
-    color:#ff69b4;
-}
-
-.hero-text p{
-    margin-top:20px;
-    line-height:1.8;
-}
-
-.hero img{
-    width:330px;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.2);
-}
-
-/* ปุ่ม */
-
-.btn{
-    display:inline-block;
-    margin-top:25px;
-    background:#ff69b4;
-    color:white;
-    padding:12px 30px;
-    border-radius:30px;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#ff1493;
-}
-
-/* หัวข้อ */
-
-.title{
-    text-align:center;
-    color:#ff69b4;
-    margin:50px 0;
-    font-size:40px;
-}
-
-/* Card */
-
-.container{
-    width:90%;
-    margin:auto;
-}
-
-.card{
-    background:white;
-    border-radius:20px;
-    padding:25px;
-    margin-bottom:25px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-}
-
-/* Gallery */
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.gallery img{
     width:100%;
-    border-radius:15px;
-}
 
-.gallery .item{
-    background:white;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
+    background:#f8a8c4;
 
-.gallery .item h3{
-    padding:15px;
-}
+    position:fixed;
 
-.gallery .item p{
-    padding:0 15px 20px;
-}
+    top:0;
 
-/* footer */
+    left:0;
 
-footer{
-    background:#ffb6c1;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:50px;
-}
+    z-index:1000;
 
-/* Responsive */
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
 
-@media(max-width:768px){
-
-.hero{
-flex-direction:column;
-}
-
-.hero-text{
-width:100%;
-text-align:center;
-}
-
-.hero img{
-margin-top:40px;
 }
 
 nav{
-display:none;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 40px;
+
+}
+
+.logo{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+nav ul li{
+
+    margin-left:25px;
+
+}
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#ffe6ef;
+
+}
+
+/* ===== Hero ===== */
+
+.hero{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:140px 40px 80px;
+
+}
+
+.hero-text{
+
+    width:55%;
+
+}
+
+.hero h1{
+
+    color:#ff3f92;
+
+    font-size:65px;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    color:#555;
+
+}
+
+.hero img{
+
+    width:360px;
+
+    height:360px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid #ffc8dd;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+/* ===== Button ===== */
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:40px;
+
+    background:#f35ea2;
+
+    color:white;
+
+    padding:16px 42px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#ff3f92;
+
+    transform:translateY(-4px);
+
+}
+
+/* ===== Section ===== */
+
+section{
+
+    padding:100px 40px;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    color:#ff3f92;
+
+    font-size:45px;
+
+    margin-bottom:60px;
+
+}
+
+.section-title::after{
+
+    content:"";
+
+    display:block;
+
+    width:120px;
+
+    height:4px;
+
+    background:#ff8bb9;
+
+    margin:12px auto;
+
+    border-radius:10px;
+
+}
+
+/* ===== Activity ===== */
+
+.activity-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.18);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.card-content{
+
+    padding:25px;
+
+}
+
+.card h3{
+
+    color:#ff3f92;
+
+    margin-bottom:10px;
+
+}
+
+.card p{
+
+    color:#555;
+
+}
+
+/* ===== Footer ===== */
+
+footer{
+
+    background:#f8a8c4;
+
+    color:white;
+
+    text-align:center;
+
+    padding:22px;
+
+    margin-top:60px;
+
+}
+
+/* ===== Animation ===== */
+
+.hero,
+
+.card,
+
+section{
+
+    animation:fadeUp .9s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===== Responsive ===== */
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+}
+
+.hero-text{
+
+width:100%;
+
+}
+
+.hero img{
+
+margin-bottom:40px;
+
+width:260px;
+
+height:260px;
+
+}
+
+.activity-grid{
+
+grid-template-columns:1fr;
+
+}
+
+nav{
+
+padding:18px;
+
+}
+
+nav ul li{
+
+margin-left:15px;
+
+}
+
+.hero h1{
+
+font-size:50px;
+
 }
 
 }
