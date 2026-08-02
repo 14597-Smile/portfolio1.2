@@ -32,7 +32,9 @@ header{
 
     width:100%;
 
-    background:#f8a8c4;
+    background:rgba(248,168,196,.95);
+
+    backdrop-filter:blur(10px);
 
     position:fixed;
 
